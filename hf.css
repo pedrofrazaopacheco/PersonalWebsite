@@ -1,0 +1,178 @@
+
+@font-face {
+    font-family: ext;
+    src: url(Joyride-Extended.otf);
+}
+
+@font-face {
+    font-family: hel;
+    src: url(Helvetica.otf);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 0, 0);
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 0, 0);
+}
+
+.header{
+    height: auto;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#blur-el {
+    position: absolute;
+    z-index: -2;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 20px;
+    text-align: center;
+    font-family: ext;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+
+    /* Image as
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+    background-image: url(images2/DSC048803.jpg);
+    background-size: 100px;
+    background-position: center;
+    */
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-size: large;
+    font-family: EXT;
+}
+
+footer {
+    height: auto;
+    max-width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    bottom: 0px;
+    padding-bottom: 20px;
+}
+
+a { color: inherit; } 
+
+.hel-p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+nav .fas{
+    display: none;
+}
+
+@media(max-width: 640px) {
+
+    .logo {
+        font-size: 15px;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        background-color: white;
+        height: 7vh;
+    }
+    
+    .nav-links ul li {
+        display: block;
+    }
+
+    body {
+        overflow-x: hidden; /* Hide horizontal scrollbar */
+    }
+      
+    #blur-el {
+        margin-top: 40px;
+    }
+
+    .nav-links ul {
+        padding: 0px;
+        text-align: center;
+        
+    }
+
+    .nav-links{
+        position: absolute;
+        padding: 5%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-120%);
+        background: rgb(255, 0, 0);
+        text-align: center;
+        border-radius: 15px;
+        height: 300px;
+        width: 400px;;
+        color:rgb(255, 255, 255);
+        transition: 0.2s;
+        z-index: 9;
+        max-width: 80%;
+    }
+
+    .nav-links ul li a{
+        color: white;
+        
+    }
+
+    nav .fas {
+        display: block;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    nav .far {
+        display: block;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+}

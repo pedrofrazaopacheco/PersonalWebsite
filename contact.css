@@ -1,0 +1,64 @@
+@font-face {
+    font-family: ext;
+    src: url(Joyride-Extended.otf);
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: ext;
+    color: red;
+    padding: 0px;
+    margin: 0px;
+}
+
+#blur-el {
+    width: 100%;
+    height: max-content;
+}
+
+#title{
+    text-align: center;
+    font-size: 15px;
+    height: 500px;
+    width: 100%;
+    background-image: url(images/DSC08459-min.jpg);
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    vertical-align: middle;
+}
+
+#title-el {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+    background-image: url(images2/DSC048803.jpg);
+    background-size: 100px;
+    background-position: center;
+}
+
+@media(max-width: 640px) {
+
+    #title {
+        height: 85vh;
+    }
+
+    #title-el {
+        font-size: 15px;
+        margin: 20px;
+    }
+
+    html{
+        overflow-x: hidden;
+    }
+
+    footer {
+        position: sticky;
+        bottom: 0px;
+        top: 20px;
+        height: 13vh;
+    }
+
+}
